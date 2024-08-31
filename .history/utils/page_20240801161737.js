@@ -1,5 +1,0 @@
-function getURLParams() {
-
-}
-
-export { getURLParams };

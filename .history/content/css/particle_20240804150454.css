@@ -1,5 +1,0 @@
-.particle {
-    position: absolute;
-    display: none;
-    z-index: var(--particle-index);
-}

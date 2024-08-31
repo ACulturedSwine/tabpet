@@ -1,7 +1,0 @@
-:root {
-    --interactable-index: 999; 
-}
-
-.interactable {
-    z-index: var(--interactable-index);
-}

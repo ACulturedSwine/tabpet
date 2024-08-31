@@ -1,7 +1,0 @@
-createMoveEl() {
-
-}
-
-createFlipEl() {
-    
-}
