@@ -1,7 +1,0 @@
-function createMoveEl() {
-
-}
-
-function createFlipEl() {
-
-}

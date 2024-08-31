@@ -1,5 +1,0 @@
-class Pet() {
-    constructor(type) {
-
-    }
-}

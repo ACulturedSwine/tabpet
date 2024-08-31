@@ -1,7 +1,0 @@
-function msg() {
-    
-}
-
-function elOutOfBounds() {
-
-}
