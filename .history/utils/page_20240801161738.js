@@ -1,0 +1,5 @@
+function getURLParams() {
+
+}
+
+export { getURLParams };

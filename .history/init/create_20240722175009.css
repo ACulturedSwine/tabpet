@@ -1,0 +1,48 @@
+body {
+    font-family: "Open Sans", Roboto, "Noto Sans Myanmar UI", Arial, sans-serif;
+}
+
+#title {
+    color: #1f1f1f;
+    font-weight: 400;
+    line-height: 1.25;
+    word-break: break-word;
+    font-size: 2rem;
+}
+
+
+
+/*
+#main {
+    position: relative;
+    overflow: auto;
+    width: 500px;
+}
+
+#wrapper {
+    width: 100%;
+    position: relative;
+    display: table;
+}
+
+#instructions-div {
+    overflow: hidden;
+    min-width: 1000px;  
+    display: table-cell;
+}
+
+#input-div {
+    float: right;
+    display: table-cell;
+}
+
+@media screen and (max-width: 570px) {
+    #instructions-div {
+        float: left;
+        min-width: 100%;
+    }
+    #input-div {
+        float: left;
+    }
+}
+*/

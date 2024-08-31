@@ -1,0 +1,12 @@
+.ui-msg {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+
+    width: 500px;
+    height: 300px;
+    border-radius: 50px;
+
+    background-color: white;
+}

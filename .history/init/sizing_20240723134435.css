@@ -1,0 +1,31 @@
+@media (min-width: 600px) {
+    #wrapper {
+        border-radius: 28px;
+        min-height: 528px;
+        padding-left: 24px;
+        padding-right: 24px;
+        width: 480px;
+    }
+}
+
+@media (min-width: 600px) and (orientation: landscape) {
+    #wrapper {
+        min-height: unset;
+        padding-left: 24px;
+        padding-right: 24px;
+        width: 100%;
+    }
+}
+
+@media (min-width: 840px) {
+    #wrapper {
+        padding-bottom: 24px;
+        padding-left: 24px;
+        padding-left: var(--c-ps-s, 24px);
+        padding-right: 24px;
+        padding-right: var(--c-ps-e, 24px);
+        padding-top: 96px;
+        padding-top: var(--wf-ps-t-bp2, 96px);
+        width: 480px;
+    }
+}

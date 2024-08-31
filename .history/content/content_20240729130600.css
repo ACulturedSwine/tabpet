@@ -1,0 +1,33 @@
+:root {
+    --interactable-index: 3; /* Above Google's content, including in-page search bar */ 
+}
+
+#interact-container { /* Width, height, top, left are set programmatically */
+    position: absolute;
+    border: solid 1px red;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.interactable {
+    position: absolute;
+    width: 100px;
+    height: auto;
+    /* visibility: 'hidden'; */
+    user-select: none;
+    z-index: var(--interactable-index);
+}
+
+.pet .move {
+    position: absolute;
+}
+
+.pet .anim {
+    position: absolute;
+    width: 800px;
+    height: 300px;
+}
+
+.pet .hitbox {
+    display: inline-block;
+}

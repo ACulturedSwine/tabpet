@@ -1,0 +1,10 @@
+body {
+    background-color: white;
+    color: black;
+    width: 40px;
+    height: 20px;
+}
+
+#greeting {
+    font-size: 10px;
+}

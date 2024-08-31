@@ -1,0 +1,9 @@
+@media (min-width: 600px) {
+    #wrapper {
+        border-radius: 28px;
+        min-height: 528px;
+        padding-left: 24px;
+        padding-right: 24px;
+        width: 480px;
+    }
+}

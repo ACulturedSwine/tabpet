@@ -1,0 +1,89 @@
+@media (min-width: 600px) {
+    #wrapper {
+        border-radius: 28px;
+        min-height: 528px;
+        padding-left: 24px;
+        padding-right: 24px;
+        width: 480px;
+    }
+}
+
+@media (min-width: 600px) and (orientation: landscape) {
+    #wrapper {
+        min-height: unset;
+        padding-left: 24px;
+        padding-right: 24px;
+        width: 100%;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    #instructions-div { /* equivalent of paFcre */
+        padding-right: 24px;
+        flex-basis: 50%;
+        flex-grow: 1;
+        max-width: 50%;
+    }
+
+    #input-div {  /* equivalent of UXFQgc */
+        padding-left: 24px;
+        flex-basis: 50%;
+        flex-grow: 1;
+        max-width: 50%;
+    }
+}
+
+@media (min-width: 840px) {
+    #wrapper {
+        padding-bottom: 24px;
+        padding-left: 24px;
+        padding-right: 24px;
+        padding-top: 96px;
+        width: 480px;
+    }
+}
+
+@media (min-width: 840px) and (orientation: landscape) {
+    #wrapper {
+        padding-left: 32px;
+        padding-right: 32px;
+        width: 100%;
+    }
+}
+
+@media (min-width: 960px) {
+    #wrapper {
+        padding-left: 24px;
+        padding-right: 24px;
+        width: 480px;
+    }
+}
+
+@media (min-width: 960px) and (orientation: landscape) {
+    #wrapper {
+        border-radius: 28px;
+        min-height: 384px;
+        padding-left: 36px;
+        padding-right: 36px;
+        padding-top: 108px;
+        width: 840px;
+    }
+}
+
+@media (min-width: 1240px) and (orientation: portrait) {
+    #wrapper {
+        padding-left: 24px;
+        padding-right: 24px;
+        width: 480px;
+    }
+}
+
+@media (min-width: 1240px) and (orientation: landscape) {
+    #wrapper {
+        margin-left: 200px;
+        margin-right: 200px;
+        padding-left: 36px;
+        padding-right: 36px;
+        width: auto;
+    }
+}

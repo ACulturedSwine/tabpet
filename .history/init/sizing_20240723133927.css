@@ -1,0 +1,21 @@
+@media (min-width: 1240px) and (orientation: landscape) {
+    #wrapper {
+        margin-left: 200px;
+        margin-right: 200px;
+        padding-left: 36px;
+        padding-left: var(--c-ps-s, 36px);
+        padding-right: 36px;
+        padding-right: var(--c-ps-e, 36px);
+        width: auto;
+    }
+}
+
+@media (min-width: 1240px) and (orientation: portrait) {
+    #wrapper {
+        padding-left: 24px;
+        padding-left: var(--c-ps-s, 24px);
+        padding-right: 24px;
+        padding-right: var(--c-ps-e, 24px);
+        width: 480px;
+    }
+}

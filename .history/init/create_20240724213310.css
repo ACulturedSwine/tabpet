@@ -1,0 +1,270 @@
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: "Open Sans", Roboto, "Noto Sans Myanmar UI", Arial, sans-serif;
+    background: #f0f4f9;
+}
+
+#main { /* equivalent of S7xv8 LZgQXe */
+    display: flex;
+    flex-direction: column;
+    padding: 48px 0;
+    min-height: 100vh;
+}
+
+#wrapper { /* equivalent of TcuCfd NQ5OL */
+    display: flex;
+    flex-direction: column;
+    border-radius: 28px;
+    min-height: 384px;
+
+    background: white;
+    margin: 0;
+    padding: 0;
+    width: auto;
+}
+
+#title {
+    color: #1f1f1f;
+    font-weight: 400;
+    line-height: 1.25;
+    word-break: break-word;
+    font-size: 2.25rem;
+    margin-top: 0;
+}
+
+#desc {
+    color: #1f1f1f;
+    margin-top: 16px;
+}
+
+#logo-div {
+    display: flex;
+    justify-content: flex-start;
+    height: 48px;
+    width: 100%;
+}
+
+#instructions-div {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* UI
+
+In order for rules to properly work, .ui elements need:
+- placeholder="" (if input)
+- aria-valid
+
+*/
+
+#buttons-div { /* equivalent of O1Slxf */
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: 80px;
+}
+
+.ui-row {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+}
+
+.ui-row > * {
+    flex: 1 1 0;
+    margin-right: 5px;
+}
+
+.ui-container {
+    position: relative;
+}
+
+.ui {
+    border-radius: 4px;
+    font-size: 16px;
+    line-height: 24px;
+    width: 100%;
+    margin: 2px;
+    padding: 12px 14px;
+    text-align: left;
+    color: #444746;
+    flex-grow: 1;
+    flex-shrink: 1;
+    border: 1px solid #747775;
+    z-index: 1;
+}
+
+select.ui { /* so select and input are same height  */
+    padding: calc(12px / .8) calc(14px / .8);
+}
+
+select.ui ~ .floating-label { /* so floating labels are at same height  */
+    top: 19px;
+}
+
+.ui[aria-invalid=true] {
+    border-color: #b3261e;
+}
+
+.ui:focus {
+    outline: 2px solid #0b57d0;
+    border: none;
+    transition: outline .15s cubic-bezier(.4,0,.2,1);
+}
+
+.ui[aria-invalid=true]:focus {
+    outline: 2px solid #b3261e;
+    border: none;
+    transition: outline .15s cubic-bezier(.4,0,.2,1);
+}
+
+.floating-label {
+    position: absolute;
+    pointer-events: none;
+    left: 15px;
+    top: 18px;
+    background-color: transparent;
+    bottom: 18px;
+    box-sizing: border-box;
+    color: #444746;
+    font: 400 16px Roboto, Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    left: 8px;
+    max-width: calc(100% -(2* 8px));
+    overflow: hidden;
+    padding: 0 8px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: auto;
+    transition: 0.2s ease all;
+    z-index: 1;
+}
+
+:is( /* move floating label to top if input is selected or filled */
+    .ui:focus,
+    input.ui:not(:placeholder-shown),
+    select:has(option:checked:not([value])),
+    select:has(option:checked:not([value=""]))
+)
+~ .floating-label { 
+    transform: translate(0, -30px);
+    font-size: 13px;
+    padding: 5px;
+    background-color: white;
+    overflow: visible;
+    opacity: 1;
+}
+
+.ui[aria-invalid=false]:focus ~ .floating-label { /* blue if selected and not invalid */
+    color: #0b57d0;
+}
+
+.ui[aria-invalid=true] ~ .floating-label {
+    color: #b3261e;
+}
+
+/* Remove Spinners */
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Warning */
+
+.warning { /* equivalent of B34EJ */
+    color: #b3261e;
+    font-size: 0.75rem;
+    font-weight: 400;
+    letter-spacing: 0.00625rem;
+    line-height: 1.3333333333;
+    position: relative;
+    display: none;
+}
+
+.warning-icon {
+    position: absolute;
+    top: 4px;
+}
+
+.warning-text {
+    position: absolute;
+    top: 4px;
+    left: 25px;
+}
+
+button {
+    background-color: #0b57d0;
+    color: white;
+    height: 40px;
+    border-radius: 20px;
+    font-size: 0.875rem;
+    font-weight: 600;
+    border: none;
+    user-select: none;
+    padding: 0 24px;
+    cursor: pointer;
+    box-shadow: 6px 7px 40px -4px
+            rgba(0, 0, 0, 0.2);
+    /* needed for ripple */
+    position: relative;
+    overflow: hidden;
+}
+
+.button-container {
+    border: 2px solid transparent;
+    padding: 2px;
+    border-radius: 22px;
+}
+
+button:focus:hover {
+    background-image: linear-gradient(rgb(0 0 0/10%) 0 0);
+    transition: .28s background-image cubic-bezier(.4,0,.2,1);
+}
+
+button:focus {
+    outline: none;
+}
+
+.button-container:has(button:focus-visible) { /* only apply when tabbed, not clicked */
+    border-color: rgb(24, 90, 188);
+    transition: border-color .28s cubic-bezier(.4,0,.2,1);
+}
+
+/* button ripple effect if clicked */
+
+button .ripple {
+    position: absolute;
+    border-radius: 50%;
+    background-image: linear-gradient(rgb(0 0 0/10%) 0 0);
+
+    width: 100px;
+    height: 100px;
+    margin-top: -50px;
+    margin-left: -50px;
+
+    animation: ripple 1s;
+    opacity: 0;
+}
+
+@keyframes ripple {
+    from {
+        opacity: 1;
+        transform: scale(0);
+    }
+
+    to {
+        opacity: 0;
+        transform: scale(10);
+    }
+}

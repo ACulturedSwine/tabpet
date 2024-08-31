@@ -1,0 +1,94 @@
+:root {
+    --ui-index: 5; /* Above interactable elements and pet */
+}
+
+.ui {
+    color: #1f1f1f;
+    font-family: Roboto,Arial,sans-serif;
+}
+
+.ui-window {
+    border-radius: 5px;
+    background-color: #E9EEF6;
+    box-shadow: 0 4px 8px 3px rgba(0,0,0,.15),0 1px 3px rgba(0,0,0,.3);
+}
+
+.icon {
+    user-select: none;
+}
+
+.icon:hover {
+    text-decoration: none;
+}
+
+.icon-circle {
+    display: flex;
+    width: 40px;
+    height: 40px;
+    background: none;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+}
+
+.icon-circle:hover {
+    background: rgba(0,0,0,.1);
+}
+
+.icon-image-container {
+    display: flex;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.icon-image {
+    width: 32px;
+}
+
+#extension-header {
+    position: absolute;
+    margin-left: 10px;
+    top: 3px;
+}
+
+#extension-header .icon {
+    display: inline-block;
+    vertical-align: top;
+}
+
+#pet-profile-window {
+    position: absolute;
+    margin-top: 15px;
+    font-size: 15px;
+    padding: 20px;
+}
+
+#pet-profile-heading {
+    font-size: 25px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    white-space: nowrap;
+}
+
+#pet-profile-primary {
+    white-space: nowrap;
+}
+
+#popup-box {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+
+    max-width: 200px;
+    max-height: 100px;
+    padding: 10px;
+
+    display: none;
+    z-index: var(--ui-index);
+}

@@ -1,0 +1,11 @@
+body {
+    font-family: "Open Sans", Roboto, "Noto Sans Myanmar UI", Arial, sans-serif;
+}
+
+#instructions-div {
+    float: left;
+}
+
+#input-div {
+    float: right;
+}

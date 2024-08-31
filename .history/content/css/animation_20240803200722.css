@@ -1,0 +1,52 @@
+/* Pet */
+.squishing {
+    animation: squish 2s cubic-bezier(0.280, 0.840, 0.420, 1) infinite;
+}
+
+@keyframes squish {
+    0%   { transform: scale(1,1) }
+    50%  { transform: scale(1.01,.97) }
+    100% { transform: scale(1,1) }
+}
+
+.dancing {
+    animation: dance 2s infinite;
+}
+
+@keyframes dance { /* A work in progress... */
+    0%  { transform: skew(5deg , 0) scale(1, 1) }
+    50% { transform: skew(-5deg , 0) scale(0.8, 1)}
+    100% { transform: skew(5deg , 0) scale(1, 1)}
+}
+
+/* Emote */
+
+@keyframes expand {
+    0%  { transform: scale(0) skew(-50deg, 0) }
+    50%  { transform: scale(1.25) }
+    100%  { transform: scale(1) }
+}
+
+@keyframes shrink {
+    0%  { transform: scale(1) }
+    50% { transform: scale(0.5) skew(5deg, 0) }
+    100%  { transform: scale(0) skew(-5deg, 0)}
+}
+
+/* Popup box */
+@keyframes fadeout {
+    0% {
+        opacity: 100%;
+    }
+    100% {
+        opacity: 0%;
+    }
+}
+
+/* Cursor blink */
+
+@keyframes blink {
+    0% {
+        border-right: 1px solid transparent;
+    }
+}

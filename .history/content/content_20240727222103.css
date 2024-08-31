@@ -1,0 +1,14 @@
+:root {
+    --interactable-container-index: -999;
+    --interactable-index: 999; 
+}
+
+#interactable-container { /* Width, height, top, left are set programmatically */
+    position: absolute;
+    border: solid 1px black;
+    z-index: var(--interactable-container-index);
+}
+
+.interactable {
+    z-index: var(--interactable-index);
+}
